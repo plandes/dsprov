@@ -1,0 +1,20 @@
+Provenience of discharge summaries Pythonic access
+==================================================
+This library provides integrated MIMIC-III with discharge summary provenance of data annotations and Pythonic classes.
+
+.. toctree::
+   :maxdepth: 3
+   :glob:
+
+   Overview <index.md>
+   doc/*
+   API Reference <api.rst>
+   Contributing <CONTRIBUTING.md>
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
