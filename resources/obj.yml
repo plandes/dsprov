@@ -1,0 +1,25 @@
+# description: provenance of data objects
+
+## Defaults
+#
+dsprov_default:
+  package_resource: zensols.dsprov
+
+dsprov_resource:
+  class_name: zensols.install.Resource
+  url: https://github.com/uic-nlp-lab/dsprov/raw/master/dist/dsprov-annotations.zip
+  name: dsprov-annotations.json
+
+dsprov_installer:
+  class_name: zensols.install.Installer
+  resources: 'instance: list: dsprov_resource'
+  package_resource: ${dsprov_default:package_resource}
+
+dsprov_source_stash:
+  class_name: zensols.dsprov.AnnotationStash
+  installer: 'instance: dsprov_installer'
+  corpus: 'instance: mimic_corpus'
+
+dsprov_stash:
+  class_name: zensols.persist.CacheStash
+  delegate: 'instance: dsprov_source_stash'
