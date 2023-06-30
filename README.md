@@ -1,4 +1,4 @@
-# Provenience of discharge summaries
+# Provenience of discharge summaries Pythonic access
 
 [![PyPI][pypi-badge]][pypi-link]
 [![Python 3.9][python39-badge]][python39-link]
