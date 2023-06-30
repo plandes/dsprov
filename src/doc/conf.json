@@ -2,5 +2,5 @@
 	      "mapped": [["zensols.deepnlp", "{url}/deepnlp/"],
 			 ["zensols.dbutil", "{url}/dbutil/"],
 			 ["zensols.mednlp", "{url}/mednlp/"],
-			 ["zensols.mimic", "{url}/mimic/"]
+			 ["zensols.mimic", "{url}/mimic/"],
 			 ["zensols.mimicsid", "{url}/mimicsid/"]]}}
