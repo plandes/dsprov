@@ -70,6 +70,22 @@ tokens: 1039
 entities: (<Admission>, <Date>, <Discharge>, <Date>, <Date of Birth>, <Sex>, ...)
 ```
 
+## Docker
+
+A [docker](docker/app/README.md) image is available as well.
+
+To use the docker image, do the following:
+
+1. Create (or obtain) the [Postgres docker image]
+1. Clone this repository `git clone --recurse-submodules
+   https://github.com/plandes/dsprov`
+1. Set the working directory to the repo: `cd dsprov`
+1. Copy the configuration from the installed [mimicdb] image configuration:
+   `make -C docker/mimicdb SRC_DIR=<cloned mimicdb directory> cpconfig`
+1. Start the container: `make -C docker/app up`
+1. Test sectioning a document: `make -C docker/app testdumpsec`
+1. Log in to the container: `make -C docker/app devlogin`
+
 
 ## Changelog
 
