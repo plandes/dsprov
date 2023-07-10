@@ -87,6 +87,40 @@ To use the docker image, do the following:
 1. Log in to the container: `make -C docker/app devlogin`
 
 
+## Citation
+
+If you use this project in your research please use the following BibTeX entry:
+
+```bibtex
+@inproceedings{landesHospitalDischargeSummarization2023,
+  title = {Hospital {{Discharge Summarization Data Provenance}}},
+  booktitle = {The 22nd {{Workshop}} on {{Biomedical Natural Language Processing}} and {{BioNLP Shared Tasks}}},
+  author = {Landes, Paul and Chaise, Aaron and Patel, Kunal and Huang, Sean and Di Eugenio, Barbara},
+  date = {2023-07},
+  pages = {439--448},
+  publisher = {{Association for Computational Linguistics}},
+  location = {{Toronto, Canada}},
+  url = {https://aclanthology.org/2023.bionlp-1.41},
+  urldate = {2023-07-10},
+  eventtitle = {{{BioNLP}} 2023}
+}
+```
+
+Also please cite the [Zensols Framework]:
+
+```bibtex
+@article{Landes_DiEugenio_Caragea_2021,
+  title={DeepZensols: Deep Natural Language Processing Framework},
+  url={http://arxiv.org/abs/2109.03383},
+  note={arXiv: 2109.03383},
+  journal={arXiv:2109.03383 [cs]},
+  author={Landes, Paul and Di Eugenio, Barbara and Caragea, Cornelia},
+  year={2021},
+  month={Sep}
+}
+```
+
+
 ## Changelog
 
 An extensive changelog is available [here](CHANGELOG.md).
