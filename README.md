@@ -5,7 +5,9 @@
 [![Python 3.10][python310-badge]][python310-link]
 
 This library provides integrated MIMIC-III with discharge summary provenance of
-data annotations and Pythonic classes.
+data annotations and Pythonic classes.  This is a package meant for other
+researchers based on the paper [Hospital Discharge Summarization Data
+Provenance](https://aclanthology.org/2023.bionlp-1.41/).
 
 
 ## Documentation
@@ -29,6 +31,7 @@ Binaries are also available on [pypi].
 
 The package includes a command line interface, which is probably most useful by
 dumping selected admission annotations.
+
 
 ### Command line
 
