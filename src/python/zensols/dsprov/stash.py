@@ -35,7 +35,7 @@ class AnnotationStash(ReadOnlyStash):
             note=ds_note)
         ant: Dict[str, Any]
         for ant in match['ant']:
-            ant_note: Note = adm.notes_by_id[ant['row_id']]
+            ant_note: Note = adm[ant['row_id']]
             ant_spans.append(NoteSpan(
                 lexspan=LexicalSpan(**ant['note_span']),
                 note=ant_note))
@@ -50,7 +50,7 @@ class AnnotationStash(ReadOnlyStash):
         note_matches: List[NoteMatch] = []
         adm: HospitalAdmission = self.corpus.get_hospital_adm_by_id(hadm_id)
         matches: Dict[str, Any] = anon['matches']
-        ds_note: Note = adm.notes_by_id[anon['ds_row_id']]
+        ds_note: Note = adm[anon['ds_row_id']]
         mid: str
         match: Dict[str, Any]
         for mid, match in matches.items():
