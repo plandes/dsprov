@@ -17,14 +17,32 @@ The [API reference](https://plandes.github.io/dsprov/api.html) is also
 available.
 
 
-## Obtaining
+## Installation and Configuration
 
-The easiest way to install the command line program is via the `pip` installer:
+The library can be installed with pip from the [pypi] repository:
 ```bash
-pip3 install --use-deprecated=legacy-resolver zensols.dsprov
+pip3 install zensols.dsprov
 ```
 
-Binaries are also available on [pypi].
+The MIMIC-III database must be installed and configured as documented in the
+[mimic package's configuration], which is necessary to render the EHR data used
+by the annotations.  However, instead of using `~/.mimicrc`, the file must be
+called `~/.dsprovrc` if not explicitly set with the `--config` option..  The
+[mimic package's configuration] section also provides instructions on how to
+install a MIMIC-III database via PostgreSQL, SQLite or in a Docker container.
+
+For example, to store cached files in `~/.dsprov/cache` using a the SQLite
+MIMIC-III database file `~/.dsprov/cache/mimic3.sqlite3`, your `~/.dsprovrc`
+would be:
+```ini
+[default]
+# the directory where cached data is stored
+data_dir = ~/.dsprov/cache
+
+[mimic_sqlite_conn_manager]
+# location of the MIMIC-III SQLite database file
+db_file = path: ~/.dsprov/cache/mimic3.sqlite3
+```
 
 
 ## Usage
@@ -37,7 +55,7 @@ dumping selected admission annotations.
 
 ```bash
 # help
-$ dsprov -h
+$ dsprov --help
 
 # get two admission IDs (hadm_id)
 $ dsprov ids -l 2
@@ -83,8 +101,9 @@ To use the docker image, do the following:
 1. Clone this repository `git clone --recurse-submodules
    https://github.com/plandes/dsprov`
 1. Set the working directory to the repo: `cd dsprov`
-1. Copy the configuration from the installed [mimicdb] image configuration:
-   `make -C docker/mimicdb SRC_DIR=<cloned mimicdb directory> cpconfig`
+1. Copy the configuration from the installed [mimicdb](docker/mimicdb) image
+   configuration: `make -C docker/mimicdb SRC_DIR=<cloned mimicdb directory>
+   cpconfig`
 1. Start the container: `make -C docker/app up`
 1. Test sectioning a document: `make -C docker/app testdumpsec`
 1. Log in to the container: `make -C docker/app devlogin`
@@ -146,3 +165,5 @@ Copyright (c) 2023 Paul Landes
 [python310-link]: https://www.python.org/downloads/release/python-310
 
 [Zensols Framework]: https://github.com/plandes/deepnlp
+[Postgres docker image]: https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iii/buildmimic/postgres/README.md
+[mimic package's configuration]: https://github.com/plandes/mimic#configuration

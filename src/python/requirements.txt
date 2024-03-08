@@ -1,1 +1,1 @@
-zensols.mimicsid~=1.5.0
+zensols.mimicsid~=1.7.0
