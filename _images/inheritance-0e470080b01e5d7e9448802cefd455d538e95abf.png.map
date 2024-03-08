@@ -1,0 +1,9 @@
+<map id="inheritanceb555e3cc52" name="inheritanceb555e3cc52">
+<area shape="rect" id="node1" title="Helper class that provides a standard way to create an ABC using" alt="" coords="205,5,277,36"/>
+<area shape="rect" id="node5" title="An interface for classes that have multi&#45;line debuging capability." alt="" coords="197,84,285,115"/>
+<area shape="rect" id="node2" href="#zensols.dsprov.domain.AdmissionMatch" target="_top" title="Contains match data for an admission." alt="" coords="5,320,161,351"/>
+<area shape="rect" id="node3" href="#zensols.dsprov.domain.MatchBase" target="_top" title="A base class for match data containers that enforces no" alt="" coords="184,241,297,272"/>
+<area shape="rect" id="node6" href="#zensols.dsprov.domain.NoteMatch" target="_top" title="A match between a text span in the discharge summary with the semanically" alt="" coords="185,320,296,351"/>
+<area shape="rect" id="node7" href="#zensols.dsprov.domain.NoteSpan" target="_top" title="A *tie* between two spans of semantically similar or copied text segments" alt="" coords="320,320,423,351"/>
+<area shape="rect" id="node4" title="A class that that generates a dictionary recursively from data classes" alt="" coords="197,163,284,193"/>
+</map>

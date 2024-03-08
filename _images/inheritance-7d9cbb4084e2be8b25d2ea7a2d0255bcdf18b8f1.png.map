@@ -1,0 +1,6 @@
+<map id="inheritance9c18c81e66" name="inheritance9c18c81e66">
+<area shape="rect" id="node1" title="Helper class that provides a standard way to create an ABC using" alt="" coords="47,5,119,36"/>
+<area shape="rect" id="node4" title="A dictionary&#45;like pure virtual class for CRUDing data, most of which read" alt="" coords="47,84,119,115"/>
+<area shape="rect" id="node2" href="#zensols.dsprov.stash.AnnotationStash" target="_top" title="A stash that create instances of :class:`.AdmissionMatch`." alt="" coords="5,241,160,272"/>
+<area shape="rect" id="node3" title="An abstract base class for subclasses that do not support write methods" alt="" coords="8,163,157,193"/>
+</map>

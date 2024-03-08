@@ -1,0 +1,53 @@
+zensols.dsprov package
+======================
+
+Submodules
+----------
+
+zensols.dsprov.app
+------------------
+.. inheritance-diagram:: zensols.dsprov.app
+   :parts: 1
+
+.. automodule:: zensols.dsprov.app
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+zensols.dsprov.cli
+------------------
+.. inheritance-diagram:: zensols.dsprov.cli
+   :parts: 1
+
+.. automodule:: zensols.dsprov.cli
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+zensols.dsprov.domain
+---------------------
+.. inheritance-diagram:: zensols.dsprov.domain
+   :parts: 1
+
+.. automodule:: zensols.dsprov.domain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+zensols.dsprov.stash
+--------------------
+.. inheritance-diagram:: zensols.dsprov.stash
+   :parts: 1
+
+.. automodule:: zensols.dsprov.stash
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: zensols.dsprov
+   :members:
+   :undoc-members:
+   :show-inheritance:
