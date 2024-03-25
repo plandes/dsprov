@@ -19,10 +19,21 @@ available.
 
 ## Installation and Configuration
 
+Both the package and database must be installed.
+
+
+### Package
+
 The library can be installed with pip from the [pypi] repository:
 ```bash
-pip3 install zensols.dsprov
+pip3 install --use-deprecated=legacy-resolver zensols.dsprov
 ```
+The `--use-deprecated=legacy-resolver` is needed for the spaCy 3.2 dependency.
+Python version 3.10 must also be used since it depends on PyTorch 1.13 (at
+least for the binary packages).
+
+
+### Database
 
 The MIMIC-III database must be installed and configured as documented in the
 [mimic package's configuration], which is necessary to render the EHR data used
