@@ -15,14 +15,14 @@ class TestApplication(unittest.TestCase):
         self.assertTrue(hadm_id in self.stash)
         am: AdmissionMatch = self.stash[hadm_id]
         self.assertEqual(AdmissionMatch, type(am))
-        self.assertEqual(int(hadm_id), am.hadm_id)
+        self.assertEqual(hadm_id, am.hadm_id)
         self.assertEqual(4, len(am.note_matches))
         self.assertEqual(1, len(am.note_matches[0].antecedents))
         ds = am.note_matches[0].discharge_summary
         ant = am.note_matches[0].antecedents[0]
         self.assertEqual(NoteSpan, type(ds))
         self.assertEqual(NoteSpan, type(ant))
-        self.assertEqual(902625, ant.note.row_id)
+        self.assertEqual('902625', ant.note.row_id)
         should = '1.  Fat stranding and inflammatory change in the right lower quadrant in the'
         self.assertEqual(should, ant.text)
         self.assertNotEqual(should, ds.text)
