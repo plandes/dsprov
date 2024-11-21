@@ -112,7 +112,7 @@ To use the docker image, do the following:
 1. Clone this repository `git clone --recurse-submodules
    https://github.com/plandes/dsprov`
 1. Set the working directory to the repo: `cd dsprov`
-1. Copy the configuration from the installed [mimicdb](docker/mimicdb) image
+1. Copy the configuration from the installed [mimicdb] image
    configuration: `make -C docker/mimicdb SRC_DIR=<cloned mimicdb directory>
    cpconfig`
 1. Start the container: `make -C docker/app up`
@@ -163,7 +163,7 @@ An extensive changelog is available [here](CHANGELOG.md).
 
 [MIT License](LICENSE.md)
 
-Copyright (c) 2023 Paul Landes
+Copyright (c) 2023 - 2024 Paul Landes
 
 
 <!-- links -->
@@ -178,3 +178,4 @@ Copyright (c) 2023 Paul Landes
 [Zensols Framework]: https://github.com/plandes/deepnlp
 [Postgres docker image]: https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iii/buildmimic/postgres/README.md
 [mimic package's configuration]: https://github.com/plandes/mimic#configuration
+[mimicdb]: https://github.com/plandes/mimicdb
